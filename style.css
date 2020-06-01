@@ -18,7 +18,7 @@ main {
   display: grid;
   grid-template:
   "header canvas" 10rem
-  "header canvas" auto
+  "header canvas" 1fr
   "header canvas" 15rem
   /2fr 5fr
 }
@@ -33,5 +33,19 @@ main {
 
 .portals {
   grid-area: canvas;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.door {
+  height: 16rem;
+  width: 8rem;
+  background: white;
+  border: .2rem solid black;
+  border-radius: .75rem;
+  margin: 2rem;
+
 }
 
