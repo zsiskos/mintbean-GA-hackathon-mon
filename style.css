@@ -28,6 +28,10 @@ main {
   / 1fr
 }
 
+.portal2 {
+  
+}
+
 .header {
   grid-area: header;
   text-align: center;
