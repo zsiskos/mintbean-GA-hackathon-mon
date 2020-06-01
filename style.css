@@ -27,7 +27,8 @@ main {
 .header {
   grid-area: header;
   text-align: center;
-  background: lightblue;
+  background: linear-gradient(30deg, rgb(191, 241, 40)  0%,rgb(93, 33, 208) 45%);
+  color: white;
 }
 
 .canvas {
@@ -61,11 +62,11 @@ main {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 a:hover {
-  color: white;
+  color: rgb(191, 241, 40);
 }
 
 .portals > a {
