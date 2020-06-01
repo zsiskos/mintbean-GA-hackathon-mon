@@ -17,15 +17,15 @@ canvas[resize] {
 main {
   display: grid;
   grid-template:
-  "header canvas" 10rem
-  "header canvas" 1fr
-  "header canvas" 15rem
-  /2fr 5fr
+  "header" 10rem
+  "canvas" auto
+  / 1fr
 }
 
 .header {
   grid-area: header;
   text-align: center;
+  background: lightblue;
 }
 
 .canvas {
@@ -51,7 +51,7 @@ main {
 
 .title {
   font-family: 'Space Mono', monospace;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 a {
@@ -60,5 +60,25 @@ a {
 
 a:hover {
 
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template:
+    "header canvas" 10rem
+    "header canvas" 1fr
+    "header canvas" 15rem
+    /2fr 5fr
+  }
+
+  .title {
+    font-size: 3rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .title {
+    font-size: 4rem
+  }
 }
 
