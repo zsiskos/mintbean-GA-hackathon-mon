@@ -6,24 +6,34 @@
   <link rel='stylesheet' type='text/css' href='style.css'/>
   <script type='text/javascript' src="paper/dist/paper-full.js"></script>
   <script type="text/paperscript" canvas="canvas1">
-    var stars =[];
+    // create array to hold the created objects
+    var dots =[];
+    // set the speed
     var velocity = 2;
 
+    //Loop to create 4000 dots
     for(var i = 0; i <= 4000; i++) {
+      //circle is paper.js method to create circle that takes x, y, radius
+      // Use random to create random height, width
     var circle = new Path.Circle(new Point(view.size.width, view.size.height) * Point.random(), 4)
-    stars.push(circle)
+      //push all circles into array 
+    dots.push(circle)
+      //color the circles
     circle.fillColor = 'purple'
     }
 
-    for(var i = 0; i <stars.length; i++){
+    //Loop to create varying speeds
+    for(var i = 0; i <dots.length; i++){
     var assignedRate = Math.random() * velocity
-    stars[i].rate = assignedRate;
+    dots[i].rate = assignedRate;
     }
 
+    //Creates animation for every frame
     function onFrame(event) {
-    for(var i = 0; i < stars.length; i++) {
-    stars[i].translate(stars[i].rate, 0)
-    }
+    for(var i = 0; i < dots.length; i++) {
+      //method translate makes them move, pulls in above function for varying speeds
+      dots[i].translate(dots[i].rate, 0)
+      }
     }
   </script>
   <script type="text/paperscript" canvas="canvas2">
