@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:wght@700&display=swap');
+ 
 html,
 body {
   margin: 0;
   overflow: hidden;
   height: 100%;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Scale canvas with resize attribute to full size */
@@ -25,6 +28,7 @@ main {
 
 .header {
   grid-area: header;
+  text-align: center;
 }
 
 .canvas {
@@ -46,6 +50,18 @@ main {
   border: .2rem solid black;
   border-radius: .75rem;
   margin: 2rem;
+}
+
+.title {
+  font-family: 'Space Mono', monospace;
+  font-size: 4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
 
 }
 
