@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' type='text/css' href='style.css'/>
   <script type='text/javascript' src="paper/dist/paper-full.js"></script>
-  <script type="text/paperscript" canvas="canvas1">
+  <script type="text/paperscript" canvas="canvas">
   // kynd.info 2014
     function Ball(r, p, v) {
         this.radius = r;
@@ -147,9 +147,9 @@
 <body>
   <main>
     
-    <!-- <div class="canvas">
+    <div class="canvas">
       <canvas id="canvas" resize hidpi="off"></canvas>
-    </div> -->
+    </div>
 
     <header class=header>
       <h1 class="title">Portal</h1>
@@ -158,28 +158,10 @@
     </header>
 
     <div class="portals">
-      <a href='index-d1.html'>
-        <div class="door"> 
-          <canvas id="canvas1" resize hidpi="off"></canvas>
-        </div>
-      </a>
-      <a href='index-d2.html'>
-        <div class="door"> 
-          <canvas id="canvas2" resize hidpi="off"></canvas>
-        </div>
-      </a>
-      <a href='index-d3.html'>
-        <div class="door"> 
-          <canvas id="canvas3" resize hidpi="off"></canvas>
-        </div>
-      </a>
-      <a href='index-d4.html'>
-        <div class="door"> 
-          <canvas id="canvas4" resize hidpi="off"></canvas>
-        </div>
+      <a href='index.html'>
+        <div class="door" id="door1"></div>
       </a>
     </div>
-
   </main>
 </body>
 </html>
