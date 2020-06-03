@@ -30,6 +30,10 @@ main {
 .header {
   grid-area: header;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(30deg, rgb(191, 241, 40)  0%,rgb(93, 33, 208) 45%);
   color: white;
   margin: 0;
@@ -113,9 +117,7 @@ a:hover {
   main {
     display: grid;
     grid-template:
-    "header canvas" 10rem
     "header canvas" 1fr
-    "header canvas" 15rem
     /2fr 5fr 
   }
 
