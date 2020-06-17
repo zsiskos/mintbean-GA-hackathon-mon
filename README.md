@@ -6,8 +6,8 @@ I had a coding/art project mulling about in my head and thought this was a great
 
 The first portal is one I created, eventually, I would like to have all the portals be something I created. Becasue of the 4-hour time limit, I used - with credit - other creations found in the exmaples pages of Paper.js.
 
-Know issue:
-In mobile mode, the 3rd and 4th portal do not click through. I'm working on figuring this out. For more details, check out the [Issues page](https://github.com/zsiskos/mintbean-GA-hackathon-mon/issues) of this repo.
+Know issue (update: fixed!):
+In mobile mode, the 3rd and 4th portal do not click through. For more details, check out the [Closed issues section](https://github.com/zsiskos/mintbean-GA-hackathon-mon/issues?q=is%3Aissue+is%3Aclosed) of this repo.
 
 
 ![Portals](https://i.imgur.com/xxOdTh0.png)
